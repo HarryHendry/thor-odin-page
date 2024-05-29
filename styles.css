@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+}
+
+header {
+    background-color: #1f2937;
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    
+}
+
+.img-logo {
+    height: 70px;
+    width: 70px;
+}
+
+
+.logo {
+    color:#f9faf8 ;
+    font-size: 24px;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    list-style-type: none;
+    
+}
+
+.navbar ul li a {
+    display: block;
+    color: #e5e7eb;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+
+.navbar ul li a:hover {
+    color: #1f2937;
+    background-color: #e5e7eb;
+}
+
+.hamburger {
+    display: none;
+}
+
+/* hero section */
+
+.hero {
+    background-color: #1f2937;
+    
+    padding: 80px 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/thor-bg.jfif);
+    background-size: cover;
+}
+
+.hero-main-text {
+    width: 450px;
+}
+
+.hero-main-text h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #f9faf8;
+}
+
+.hero-main-text p {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.hero-main-text button {
+    padding: 7px 30px;
+    background-color: #3882f6;
+    border: none;
+    border-radius: 5px;
+    color: #f9faf8;
+    margin-top: 10px;
+}
+.img-holder {
+    height: 200px;
+    width: 500px;
+    background: url(/Thor.png);
+    background-size: 100% 100%;
+    
+}
+.information {
+  text-align: center;
+    padding: 20px;
+}
+
+.information h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #1f2937;
+}
+
+.main-box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    flex-wrap: wrap;
+}
+
+.box-container {
+ width: 150px;
+ margin: 30px;
+ color: #7d7c7c;
+}
+
+.box {
+    height: 150px;
+    width: 150px;
+    border: 3px solid #3882f6;
+   margin-bottom: 30px;
+   border-radius: 10px;
+}
+
+ .one {
+    background: url(/mad-thor.jfif);
+    background-size: cover;
+}
+
+.two {
+    background: url(/thor-flying.jfif);
+    background-position: center;
+    background-size: cover;
+}
+.three {
+    background: url(/thor-smash.jfif);
+    
+    background-size: cover;
+}
+.four {
+    background: url(/thor-landing.jpg);
+    
+    background-size: cover;
+}
+
+.quote {
+   
+    background-color: #e5e7eb;
+    text-align: center;
+    padding: 100px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/hammer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.quote p {
+    font-size: 36px;
+    font-style: italic;
+    color: rgb(255, 255, 255);
+    font-weight: light;
+}
+
+.quote .thor {
+    margin-top: 10px;
+    text-align: end;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.action {
+    height: 350px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.action-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #3882f6;
+    width: 900px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.inner-action-box h3 {
+    color: #f9faf8;
+
+}
+
+.inner-action-box {
+    width: 400px;
+}
+
+.inner-action-box p {
+    color: #e5e7eb;
+}
+
+.action-box button {
+    background-color: #3882f6;
+    border: 3px solid #e5e7eb;
+    border-radius: 10px;  
+    padding: 5px 45px;
+    color: #e5e7eb;
+}
+
+footer {
+    background-color: #1f2937;
+    color: #e5e7eb;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 900px) {
+
+    .hero {
+        flex-direction: column-reverse;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger .line {
+        background: white;
+        height: 5px;
+        width: 30px;
+        margin: 5px 0;
+        border-radius: 20px;
+    }
+
+    .navbar {
+        position: absolute;
+        height: 0;
+        top: 80px;
+        background-color: #1f2937;
+        width: 100vw;
+        left: 0;
+        right: 0;
+
+    }
+
+.navbar ul {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    width: fit-content;
+    opacity: 0;
+}
+
+
+.navbar.active {
+    height: 200px;
+}
+
+.navbar.active ul {
+    opacity: 1;
+}
+
+}
